@@ -16,3 +16,9 @@ You can then follow the instructions in the blog post located at this link.
 
 The blog post will guide you through the process of setting up a Gitpod workspace for Android and Kotlin Multiplatform Mobile development using Android Studio on gitpod, as well as connecting your Android device to the workspace through Tailscale VPN.
 
+Add preinstall:
+sudo apt-get update
+sudo apt-get install openjdk-17-jdk
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+yes | /home/gitpod/Android/Sdk/cmdline-tools/latest/bin/sdkmanager --licenses
+

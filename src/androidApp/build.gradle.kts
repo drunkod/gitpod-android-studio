@@ -16,6 +16,11 @@ android {
     buildFeatures {
         compose = true
     }
+    externalNativeBuild {
+        ndkBuild {
+            path = file("/workspace/gitpod-android-studio/jansson/Android.mk")
+        }
+    }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.4"
     }
